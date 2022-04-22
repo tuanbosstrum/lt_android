@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="302dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+
+        <TextView
+            android:id="@+id/cau1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu 1. Theo quyết định của Hội nghị Ianta (2-1945), quân đội nước nào sẽ vào chiếm đóng Nhật Bản và Nam Triều Tiên?"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup
+            android:id="@+id/rdg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cau1"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Anh" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Pháp" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Mỹ" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cau2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu 2. Hội nghị Ianta (2-1945) được triệu tập trong bối cảnh lịch sử nào?"
+            app:layout_constraintTop_toBottomOf="@id/rdg"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Chiến tranh thế giới thứ hai đã kết thúc."
+            app:layout_constraintTop_toBottomOf="@id/cau2"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Chiến tranh thế giới thứ hai bước vào giai đoạn kết thúc."
+            app:layout_constraintTop_toBottomOf="@id/cb1"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Chiến tranh thế giới thứ hai đang diễn biến căng thẳng."
+            app:layout_constraintTop_toBottomOf="@id/cb2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cau3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu 3: Hội nghị cấp cao của ba cường quốc Liên Xô, Mĩ, Anh diễn ra từ ngày 4 đến 11-2-1945 được tổ chức tại đâu?"
+            app:layout_constraintTop_toBottomOf="@id/cb3"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cau3"
+            android:ems="9"
+            android:inputType="number"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_nopbai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nộp bài"
+            app:layout_constraintTop_toBottomOf="@id/et"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
